@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Work_in_Progress-2023</string>
+    <string name="app_title">WORK IN PROGRESS</string>
+    <string name="workouts">WORKOUTS</string>
+    <string name="exercises">EXERCISES</string>
 </resources>

@@ -26,6 +26,8 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+
+        setContentView(R.layout.workouts);
     }
 }
 
