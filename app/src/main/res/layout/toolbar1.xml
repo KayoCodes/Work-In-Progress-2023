@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/appBackground1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borderbottom"
+        android:padding="7dp">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/utsa_roadrunners_logo__1_"
+            android:id="@+id/leftRR"
+            android:contentDescription="Road Runner Icon"
+
+            />
+
+        <TextView
+            android:id="@+id/middleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/WIP"
+            android:textColor="#AC5424"
+
+            android:textSize="26sp"
+            android:textStyle="bold"
+             />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons8_dumbell_64"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/right_icon"
+            android:contentDescription="Picture of Dumbbell" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

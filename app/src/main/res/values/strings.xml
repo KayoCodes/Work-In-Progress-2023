@@ -4,4 +4,9 @@
     <string name="login_username_prompt">Username:</string>
     <string name="login_password_prompt">Password:</string>
     <string name="login_button_text">Login</string>
+    <string name="WIP">WORK IN PROGRESS</string>
+    <string name="apNameLabel">NAME:</string>
+    <string name="apAgeLabel">AGE:</string>
+    <string name="apHeightLabel">HEIGHT:</string>
+    <string name="apWeightLabel">WEIGHT:</string>
 </resources>
