@@ -61,7 +61,7 @@ public class LoginActivity extends ComponentActivity {
                 EditText pText = (EditText) findViewById(R.id.login_password_input);
 
                 if( authenticate(uText.getText().toString(), pText.getText().toString()) ){
-                    Intent intent = new Intent( LoginActivity.this, ProfileActivity.class);
+                    Intent intent = new Intent( LoginActivity.this, profileActivity.class);
                     startActivity(intent);
                 }
                 else{
