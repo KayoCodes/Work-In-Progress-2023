@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -16,7 +17,7 @@
             android:layout_height="64dp"
             android:src="@drawable/utsa_roadrunners_logo__1_"
             android:id="@+id/leftRR"
-            android:contentDescription="Road Runner Icon"
+            android:contentDescription="@string/road_runner_icon"
 
             />
 
@@ -30,7 +31,7 @@
 
             android:textSize="26sp"
             android:textStyle="bold"
-             />
+            tools:ignore="RelativeOverlap" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -38,7 +39,7 @@
             android:src="@drawable/icons8_dumbell_64"
             android:layout_alignParentEnd="true"
             android:id="@+id/right_icon"
-            android:contentDescription="Picture of Dumbbell" />
+            android:contentDescription="@string/picture_of_dumbbell" />
     </RelativeLayout>
 
 

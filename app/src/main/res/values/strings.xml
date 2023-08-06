@@ -9,4 +9,6 @@
     <string name="apAgeLabel">AGE:</string>
     <string name="apHeightLabel">HEIGHT:</string>
     <string name="apWeightLabel">WEIGHT:</string>
+    <string name="road_runner_icon">Road Runner Icon</string>
+    <string name="picture_of_dumbbell">Picture of Dumbbell</string>
 </resources>
