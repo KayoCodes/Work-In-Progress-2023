@@ -11,4 +11,11 @@
     <string name="apWeightLabel">WEIGHT:</string>
     <string name="road_runner_icon">Road Runner Icon</string>
     <string name="picture_of_dumbbell">Picture of Dumbbell</string>
+    <string name="app_title">WORK IN PROGRESS</string>
+    <string name="workouts">WORKOUTS</string>
+    <string name="exercises">EXERCISES</string>
+    <string name="user_input_header">USER INPUT</string>
+    <string name="add_workout">ADD WRKT</string>
+    <string name="edit_workout">EDIT WRKT</string>
+    <string name="delete_workout">DELETE WRKT</string>
 </resources>
