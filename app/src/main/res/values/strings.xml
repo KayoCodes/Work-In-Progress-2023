@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">Work_in_Progress-2023</string>
+    <string name="login_title_WIP">Work In Progress</string>
+    <string name="login_username_prompt">Username:</string>
+    <string name="login_password_prompt">Password:</string>
+    <string name="login_button_text">Login</string>
+    <string name="WIP">WORK IN PROGRESS</string>
+    <string name="apNameLabel">NAME:</string>
+    <string name="apAgeLabel">AGE:</string>
+    <string name="apHeightLabel">HEIGHT:</string>
+    <string name="apWeightLabel">WEIGHT:</string>
+    <string name="road_runner_icon">Road Runner Icon</string>
+    <string name="picture_of_dumbbell">Picture of Dumbbell</string>
     <string name="app_title">WORK IN PROGRESS</string>
     <string name="workouts">WORKOUTS</string>
     <string name="exercises">EXERCISES</string>
