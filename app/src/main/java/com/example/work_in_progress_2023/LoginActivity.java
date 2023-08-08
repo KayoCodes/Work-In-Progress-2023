@@ -9,11 +9,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
 public class LoginActivity extends ComponentActivity {
-    AssetManager assets;
+    //AssetManager assets;
     private Button button;
 
     @Override
@@ -21,47 +22,52 @@ public class LoginActivity extends ComponentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        assets = getAssets();
+        //assets = getAssets();
         setupButtons();
     }
 
 
-    private boolean authenticate( String username, String password ) {
+    private int authenticate( String username, String password ) {
         Scanner scan;
         String str = "";
         String[] arr;
+        int id =-1;
         boolean authenticated = false;
-
+       File f = new File(getFilesDir().getAbsolutePath()+ "/login.txt");
         try {
-            scan = new Scanner(assets.open("login.txt"));
+            if(f.exists()) {
+                scan = new Scanner(openFileInput("login.txt"));
 
-            while (scan.hasNext()) {
-                str = scan.nextLine();
-                arr = str.split(",");
-                if (username.equalsIgnoreCase(arr[1]) && password.equals(arr[2])) {
-                    authenticated = true;
-                    break;
+                while (scan.hasNext()) {
+                    str = scan.nextLine();
+                    arr = str.split(",");
+                    if (username.equalsIgnoreCase(arr[1]) && password.equals(arr[2])) {
+                        id = Integer.parseInt(arr[0]);
+                        return id;
+                    }
                 }
+                scan.close();
             }
-            scan.close();
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
         }
 
-        return authenticated;
+        return id;
     }
 
     private void setupButtons(){
         button = (Button) findViewById(R.id.login_button);
+        Button registerButton =(Button)findViewById(R.id.registerButton);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 EditText uText = (EditText) findViewById(R.id.login_username_input);
                 EditText pText = (EditText) findViewById(R.id.login_password_input);
-
-                if( authenticate(uText.getText().toString(), pText.getText().toString()) ){
+                int id = authenticate(uText.getText().toString(), pText.getText().toString());
+                if( id > 0 ){
                     Intent intent = new Intent( LoginActivity.this, ProfileActivity.class);
+                    intent.putExtra("id",id);
                     startActivity(intent);
                 }
                 else{
@@ -71,6 +77,14 @@ public class LoginActivity extends ComponentActivity {
                     uText.setError("Incorrect username and password combination");
                     pText.setError("Incorrect username and password combination");
                 }
+            }
+        });
+
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
             }
         });
     }

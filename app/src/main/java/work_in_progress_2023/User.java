@@ -4,11 +4,11 @@ public class User {
     private int id;
     private String name;
     private int age;
-    private double height;
-    private double weight;
+    private String height;
+    private int weight;
     private Workout[] listWorkouts;
 
-    public User(int id, String name, int age, double height, double weight) {
+    public User(int id, String name, int age, String height, int weight) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -16,7 +16,7 @@ public class User {
         this.weight = weight;
     }
 
-    public User(int id, String name, int age, double height, double weight, Workout[] listWorkouts) {
+    public User(int id, String name, int age, String height, int weight, Workout[] listWorkouts) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -49,19 +49,19 @@ public class User {
         this.age = age;
     }
 
-    public double getHeight() {
+    public String getHeight() {
         return height;
     }
 
-    public void setHeight(double height) {
+    public void setHeight(String height) {
         this.height = height;
     }
 
-    public double getWeight() {
+    public int getWeight() {
         return weight;
     }
 
-    public void setWeight(double weight) {
+    public void setWeight(int weight) {
         this.weight = weight;
     }
 

@@ -18,4 +18,8 @@
     <string name="add_workout">ADD WRKT</string>
     <string name="edit_workout">EDIT WRKT</string>
     <string name="delete_workout">DELETE WRKT</string>
+    <string name="Register">Register A New Account</string>
+    <string name="aRemailLabel" >EMAIL</string>
+    <string name="passwordLabel">PASSWORD</string>
+    <string name="create_account">Create Account</string>
 </resources>
