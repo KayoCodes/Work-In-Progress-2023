@@ -15,9 +15,6 @@
     <string name="workouts">WORKOUTS</string>
     <string name="exercises">EXERCISES</string>
     <string name="user_input_header">USER INPUT</string>
-    <string name="add_workout">ADD WRKT</string>
-    <string name="edit_workout">EDIT WRKT</string>
-    <string name="delete_workout">DELETE WRKT</string>
     <string name="Register">Register A New Account</string>
     <string name="aRemailLabel" >EMAIL</string>
     <string name="passwordLabel">PASSWORD</string>
