@@ -22,4 +22,12 @@
     <string name="aRemailLabel" >EMAIL</string>
     <string name="passwordLabel">PASSWORD</string>
     <string name="create_account">Create Account</string>
+    <string name="add_workout">ADD XRCS</string>
+    <string name="edit_workout">EDIT XRCS</string>
+    <string name="delete_workout">DELETE XRCS</string>
+    <string name="exercise_name">EXERCISE NAME:</string>
+    <string name="rep_goal">REP GOAL:</string>
+    <string name="rep_actual">REP ACTUAL:</string>
+    <string name="weight_goal">WEIGHT GOAL:</string>
+    <string name="weight_actual">WEIGHT ACTUAL:</string>
 </resources>

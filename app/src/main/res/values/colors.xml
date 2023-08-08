@@ -10,4 +10,5 @@
     <color name="utsa_blue">#0C2340</color>
     <color name="utsa_orange">#F15A22</color>
     <color name="utsa_background">#0B233F</color>
+    <color name="utsa_orange_transparent">#80F15A22</color>
 </resources>
