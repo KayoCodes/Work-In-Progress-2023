@@ -15,7 +15,12 @@
     <string name="workouts">WORKOUTS</string>
     <string name="exercises">EXERCISES</string>
     <string name="user_input_header">USER INPUT</string>
-    <string name="add_workout">ADD WRKT</string>
-    <string name="edit_workout">EDIT WRKT</string>
-    <string name="delete_workout">DELETE WRKT</string>
+    <string name="add_workout">ADD XRCS</string>
+    <string name="edit_workout">EDIT XRCS</string>
+    <string name="delete_workout">DELETE XRCS</string>
+    <string name="exercise_name">EXERCISE NAME:</string>
+    <string name="rep_goal">REP GOAL:</string>
+    <string name="rep_actual">REP ACTUAL:</string>
+    <string name="weight_goal">WEIGHT GOAL:</string>
+    <string name="weight_actual">WEIGHT ACTUAL:</string>
 </resources>
