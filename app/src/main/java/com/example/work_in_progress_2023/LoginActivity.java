@@ -3,7 +3,6 @@ package com.example.work_in_progress_2023;
 import androidx.activity.ComponentActivity;
 
 import android.content.Intent;
-import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,7 +14,7 @@ import java.util.Scanner;
 
 public class LoginActivity extends ComponentActivity {
     //AssetManager assets;
-    private Button button;
+    private Button login_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,10 +55,10 @@ public class LoginActivity extends ComponentActivity {
     }
 
     private void setupButtons(){
-        button = (Button) findViewById(R.id.login_button);
+        login_button = (Button) findViewById(R.id.login_button);
         Button registerButton =(Button)findViewById(R.id.registerButton);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        login_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 EditText uText = (EditText) findViewById(R.id.login_username_input);

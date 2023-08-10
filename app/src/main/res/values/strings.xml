@@ -27,4 +27,5 @@
     <string name="rep_actual">REP ACTUAL:</string>
     <string name="weight_goal">WEIGHT GOAL:</string>
     <string name="weight_actual">WEIGHT ACTUAL:</string>
+    <string name="workouts_button_value">Workouts</string>
 </resources>

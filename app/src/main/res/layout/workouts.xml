@@ -69,8 +69,9 @@
         android:layout_width="5dp"
         android:layout_height="25dp"
         android:background="@color/utsa_orange"
-        app:layout_constraintTop_toBottomOf="@id/first_divider"
-        tools:layout_editor_absoluteX="203dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_divider" />
 
     <Button
         android:id="@+id/exercises"
@@ -98,10 +99,10 @@
         android:layout_width="410dp"
         android:layout_height="317dp"
         android:layout_marginTop="5dp"
+        android:src="@drawable/workouts_placeholder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/third_divider"
-        app:srcCompat="@drawable/workouts_placeholder" />
+        app:layout_constraintTop_toTopOf="@+id/third_divider" />
 
     <View
         android:id="@+id/fourth_divider"

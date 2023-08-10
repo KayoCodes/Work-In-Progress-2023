@@ -4,6 +4,9 @@ import androidx.activity.ComponentActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,6 +32,7 @@ public class ProfileActivity extends ComponentActivity {
 
         setContentView(R.layout.activity_profile);
         setUpProfile();
+        setupButtons();
 
         barChart = findViewById(R.id.bar_chart);
 
@@ -87,5 +91,17 @@ public class ProfileActivity extends ComponentActivity {
 
         }
 
+    }
+
+    private void setupButtons(){
+        Button workout_button =(Button) findViewById(R.id.workouts_button);
+
+        workout_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProfileActivity.this, WorkoutActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
